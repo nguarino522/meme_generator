@@ -1,0 +1,98 @@
+body {
+    background-color: grey;
+    font-family: "Silkscreen", sans-serif;
+}
+
+#toppage {
+    border: 5px solid #555;
+    margin: 10px;
+    background-color: black;
+}
+
+#memeaddsection {
+    border: 5px solid #555;
+    margin: 10px;
+    text-align: center;
+    background-color: black;
+    min-height: 400px;
+}
+
+#titleh1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#titlep {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#title {
+    background-color: aquamarine;
+    border: 5px solid #555;
+}
+
+form {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #555;
+}
+
+#form-container {
+    width: 50%;
+}
+
+#memeform {
+    background-color: rgb(100, 102, 214);
+}
+
+
+#memeimage {
+    border: 5px solid #555;
+}
+
+#allmemes {
+    text-align: center;
+}
+
+#submitbtn {
+    height: 60px;
+}
+
+#toptext {
+    position: absolute;
+    z-index: 10;
+    color:antiquewhite;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.5;
+    left: 5px;
+    top: 5px;
+}
+
+#bottomtext {
+    position: absolute;
+    z-index: 10;
+    color:antiquewhite;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.5;
+    bottom: 50px;
+}
+
+#meme {
+    width: 400px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    float: left;
+}
+
+#addmemeimage {
+    max-width: 400px;
+}

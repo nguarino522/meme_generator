@@ -1,22 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meme Generator</title>
-        <link type="text/css" rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff"> -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
+</head>
 
 
 
-    <body>
+<body>
+    <div id="toppage">
+        <div id="title">
+            <h1 id="titleh1">Generate All The Memes!</h1>
+            <p id="titlep">Fill out the form below to create your own meme.</p>
+        </div>
+        <div id="allmemes">
+            <img id="memeimage" src="all_the_memes.jpg" height="200px">
+        </div>
+        <div class="row container" id="form-container">
+            <form id="memeform">
+                <div class="row">
+                    <div class="input-field">
+                        <input placeholder="https://image_url" id="image_url" type="url" class="validate" pattern="https?://.+" required>
+                        <label for="image_url">Image URL:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <input placeholder="text to display on top of meme" id="top_text" type="text" class="validate">
+                        <label for="top_text">Text On Top:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <input placeholder="text to display on bottom of meme" id="bottom_text" type="text"
+                            class="validate">
+                        <label for="bottom_text">Text On Bottom:</label>
+                    </div>
+                </div>
+                <div id="submitbtn">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" id="submitbtn">Submit
+                        <i class="material-icons right">Add Meme!</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="row" id="memeaddsection"></div>
 
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </body>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
 
 </html>
